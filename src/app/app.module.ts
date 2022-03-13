@@ -15,6 +15,8 @@ import { ButtonComponent } from './common/button/button.component';
 
 //enums
 import { Routing } from './enums/routing';
+import { CaculaterComponent } from './components/caculater/caculater.component';
+import { LoginComponent } from './common/login/login.component';
 
 //routes
 const routes: Routes = [
@@ -34,6 +36,14 @@ const routes: Routes = [
   {
     path: Routing.Admin,
     component: AdminComponent,
+  },
+  {
+    path: Routing.Caculate,
+    component: CaculaterComponent,
+  },
+  {
+    path: Routing.Login,
+    component: LoginComponent,
   }
 ]
 
@@ -43,7 +53,9 @@ const routes: Routes = [
     HomeComponent,
     UserComponent,
     AdminComponent,
-    ButtonComponent
+    ButtonComponent,
+    CaculaterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

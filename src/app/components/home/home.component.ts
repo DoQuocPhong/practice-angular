@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+//enums
+import { Routing } from 'src/app/enums/routing';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
