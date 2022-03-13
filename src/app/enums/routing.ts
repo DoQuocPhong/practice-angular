@@ -3,5 +3,4 @@ export enum Routing {
     User = 'user',
     Admin = 'admin',
     Caculate = 'caculate',
-    Login = 'login',
 }

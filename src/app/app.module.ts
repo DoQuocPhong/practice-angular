@@ -40,10 +40,6 @@ const routes: Routes = [
   {
     path: Routing.Caculate,
     component: CaculaterComponent,
-  },
-  {
-    path: Routing.Login,
-    component: LoginComponent,
   }
 ]
 
