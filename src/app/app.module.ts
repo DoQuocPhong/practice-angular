@@ -8,7 +8,7 @@ import { RouterModule, Routes } from '@angular/router'
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 //import { UserComponent } from './components/user/user.component';
-import { AdminComponent } from './components/admin/admin.component';
+//import { AdminComponent } from './components/admin/admin.component';
 
 //common
 // import { ButtonComponent } from './common/button/button.component';
@@ -16,7 +16,7 @@ import { AdminComponent } from './components/admin/admin.component';
 //enums
 import { Routing } from './enums/routing';
 import { CaculaterComponent } from './components/caculater/caculater.component';
-import { LoginComponent } from './common/login/login.component';
+//import { LoginComponent } from './common/login/login.component';
 // import { HeaderComponent } from './common/header/header.component';
 // import { FooterComponent } from './common/footer/footer.component';
 // import { CardComponent } from './common/card/card.component';
@@ -47,13 +47,17 @@ const routes: Routes = [
   //   component: UserComponent,
   // },
   {
+    path: Routing.Admin,
+    loadChildren: () => import('./components/admin/admin.module').then(m => m.AdminModule)
+  },
+  {
     path: Routing.User,
     loadChildren: () => import('./components/user/user.module').then(m => m.UserModule)
   },
-  {
-    path: Routing.Admin,
-    component: AdminComponent,
-  },
+  // {
+  //   path: Routing.Admin,
+  //   component: AdminComponent,
+  // },
   {
     path: Routing.Caculate,
     component: CaculaterComponent,
@@ -65,10 +69,10 @@ const routes: Routes = [
     AppComponent,
     HomeComponent,
     //UserComponent,
-    AdminComponent,
+    //AdminComponent,
     //ButtonComponent,
     CaculaterComponent,
-    LoginComponent,
+    //LoginComponent,
     //HeaderComponent,
     //FooterComponent,
     //CardComponent,

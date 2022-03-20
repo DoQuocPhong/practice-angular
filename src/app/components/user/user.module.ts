@@ -7,6 +7,7 @@ import { FooterComponent } from '@common/footer/footer.component';
 import { HeaderComponent } from '@common/header/header.component';
 import { ImageComponent } from '@common/image/image.component';
 import { TextComponent } from '@common/text/text.component';
+
 import { UserComponent } from './user.component';
 
 import { userRoutes } from './user.routes';
